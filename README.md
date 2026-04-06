@@ -64,10 +64,16 @@ npm run dev
 ## 📸 Screenshots
 
 - **Desktop view**<br/>
-  <img src="screenshots/desktop-screenshot.png" alt="desktop screenshot of the website" width="400" height="400" />
-  
+  ![White theme desktop](src/screenshots/white-theme-desktop.png)
+  ![Dark theme desktop](src/screenshots/dark-theme-desktop.png)
+  ![Dark theme desktop with notes](src/screenshots/dark-theme-desktop-full.png)
+  ![Add section desktop](src/screenshots/add-desktop.png)
+  ![Edit section desktop](src/screenshots/edit-desktop.png)
+  ![Delete section desktop](src/screenshots/delete-desktop.png)
+
 - **Mobile view**<br/>
-  <img src="screenshots/mobile-screenshot.png" alt="mobile screenshot of the website" width="150" height="300" />
+  ![White theme mobile](src/screenshots/white-theme-mobile.png)
+  ![Dark theme mobile](src/screenshots/dark-theme-mobile.png)
 
 ## 🤝 Contributing
 
