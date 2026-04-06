@@ -12,14 +12,15 @@ Live Demo: https://note-app-umber-one.vercel.app/
 
 - **Full CRUD Functionality**: Users can Create, Read, Update, and Delete notes seamlessly.
 
-- **Data Persistence**: Integrated localStorage to ensure notes are saved even after the browser is closed or refreshed.
+- **Data Persistence**: Integrated `localStorage` to ensure notes are saved even after the browser is closed or refreshed.
 
 - **Responsive Design**: Built with a "Mobile-First" approach using Tailwind CSS, making it perfectly usable on smartphones, tablets, and desktops.
 
 - **Dynamic UI**: Interactive modal menus for adding, editing, and confirming deletions.
 
 ## 🛠️ Tech Stack
-**Frontend**: React.js (Hooks: useState, useEffect)
+
+**Frontend**: React.js (Hooks: `useState`, `useEffect`)
 
 **Styling**: Tailwind CSS
 
@@ -33,7 +34,7 @@ During this project, I strengthened my skills in:
 
 - **State Management**: Handling complex arrays of objects and ensuring UI updates stay in sync with the data.
 
-- **Immutability**: Mastering JavaScript methods like .map() and .filter() to update the React state without mutating the original data.
+- **Immutability**: Mastering JavaScript methods like `.map()` and `.filter()` to update the React state without mutating the original data.
 
 - **UI/UX Logic**: Managing conditional rendering for modals and empty states.
 
@@ -46,7 +47,7 @@ If you want to run this project locally:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/zentshalal/note-app.git
 ```
 
 Install dependencies:
@@ -60,3 +61,19 @@ Start the development server:
 ```bash
 npm run dev
 ```
+
+## 📸 Screenshots
+
+- **Desktop view**<br/>
+  <img src="screenshots/desktop-screenshot.png" alt="desktop screenshot of the website" width="400" height="400" />
+  
+- **Mobile view**<br/>
+  <img src="screenshots/mobile-screenshot.png" alt="mobile screenshot of the website" width="150" height="300" />
+
+## 🤝 Contributing
+
+This project was developed as part of my self-taught journey to master full-stack web development fundamentals. Feel free to fork the repository or suggest improvements!
+
+## 📬 Contact
+
+**GitHub**: zentshalal
