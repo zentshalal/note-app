@@ -3,10 +3,9 @@
 This is a fully functional Note-Taking Application built with React.js. It was my first deep dive into modern frontend development, focusing on state management, component architecture, and persistent data storage.
 I built this project to practice building a clean, responsive UI that handles real-time user data.
 
-
 ## 🚀 Live Demo
 
-Live Demo: https://note-app-umber-one.vercel.app/
+Live Demo: <a href="https://note-app-umber-one.vercel.app" target="_blank">https://note-app-umber-one.vercel.app/</a>
 
 ## ✨ Key Features
 
