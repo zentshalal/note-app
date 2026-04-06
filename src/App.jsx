@@ -5,6 +5,7 @@ import Card from "./components/Card";
 import Empty from "./components/Empty";
 import AddNoteMenu from "./components/AddNoteMenu";
 import DeleteMenu from "./components/DeleteMenu";
+import EditNoteMenu from "./components/EditNoteMenu";
 
 function App() {
   const [notes, setNotes] = useState(() => {
@@ -35,11 +36,39 @@ function App() {
   }
 
   function delNote(e) {
+    e.preventDefault();
+
     const updatedNotes = notes.filter(note => note.id !== parseInt(e.target.dataset.id));
 
     setNotes([...updatedNotes]);
 
     document.querySelector(".delete-menu").classList.add("invisible");
+  }
+
+  function editNote(e) {
+    e.preventDefault();
+
+    const id = parseInt(document.querySelector(".edit-note-menu button:last-child").dataset.id);
+    const title = document.querySelector(".edit-note-menu input").value.trim();
+    const content = document.querySelector(".edit-note-menu textarea").value.trim();
+
+    if (title === "" && content === "") {
+      return;
+    }
+
+    const updatedNotes = notes.map(note => {
+      if (note.id === id) {
+        console.log("found");
+        return { ...note, title, content };
+      }
+      return note;
+    });
+
+    setNotes([...updatedNotes]);
+
+    document.querySelector(".edit-note-menu input").value = "";
+    document.querySelector(".edit-note-menu textarea").value = "";
+    document.querySelector(".edit-note-menu").classList.add("invisible");
   }
 
   useEffect(() => {
@@ -56,6 +85,7 @@ function App() {
       </div>
       <AddNoteMenu saveNote={(e) => addNote(e)} />
       <DeleteMenu deleteNote={(e) => delNote(e)} />
+      <EditNoteMenu editNote={(e) => editNote(e)} />
     </main>
   )
 }
