@@ -1,14 +1,14 @@
-# 📝 Quick Notes - React CRUD Application
+# 📝 Quick Notes - React CRUD Application
 
 This is a fully functional Note-Taking Application built with React.js. It was my first deep dive into modern frontend development, focusing on state management, component architecture, and persistent data storage.
 I built this project to practice building a clean, responsive UI that handles real-time user data.
 
 
-## 🚀 Live Demo
+## 🚀 Live Demo
 
 Live Demo: https://note-app-umber-one.vercel.app/
 
-## ✨ Key Features
+## ✨ Key Features
 
 - **Full CRUD Functionality**: Users can Create, Read, Update, and Delete notes seamlessly.
 
