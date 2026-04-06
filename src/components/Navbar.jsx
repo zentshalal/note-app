@@ -29,8 +29,6 @@ function Navbar() {
         document.querySelector(".add-note-menu").classList.remove("invisible");
     }
 
-
-
     return (
         <nav className="px-6 py-8 flex items-center justify-between sm:flex-row flex-col gap-y-4">
             <h2 className="text-3xl font-bold ">Quick Notes</h2>
