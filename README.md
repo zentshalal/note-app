@@ -72,8 +72,8 @@ npm run dev
   ![Delete section desktop](src/screenshots/delete-desktop.png)
 
 - **Mobile view**<br/>
-  ![White theme mobile](src/screenshots/white-theme-mobile.png)
-  ![Dark theme mobile](src/screenshots/dark-theme-mobile.png)
+  <img src="src/screenshots/white-theme-mobile.png" alt="White theme mobile" width="400px" height="600px" />
+  <img src="src/screenshots/dark-theme-mobile.png" alt="Dark theme mobile" width="400px" height="600px" />
 
 ## 🤝 Contributing
 
