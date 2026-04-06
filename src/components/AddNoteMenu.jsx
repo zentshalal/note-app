@@ -1,17 +1,6 @@
 import React from "react";
 
-function AddNoteMenu() {
-    function saveNote(e) {
-    const newNote = {
-            id: Date.now(),
-            title: e.target.value|| "New Note",
-            content: e.target.value || "Note content goes here..."
-    }
-    document.querySelector(".add-note-menu").classList.add("invisible");
-
-    return newNote;
-  }
-
+function AddNoteMenu({ saveNote }) {
     return (
         <div className="add-note-menu invisible fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
             <div className="bg-white dark:bg-zinc-800 rounded-lg p-6 w-full max-w-md">
