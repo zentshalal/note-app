@@ -1,17 +1,35 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
-    const onClickDarkMode = () => {
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme-preference");
+        if (savedTheme) {
+            setIsDarkMode(savedTheme === "dark");
+        }
+    }, []);
+
+    useEffect(() => {
+        if (isDarkMode) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    }, [isDarkMode]);
+
+    function onClickDarkMode() {
         setIsDarkMode(prev => !prev);
         document.documentElement.classList.toggle("dark");
+        localStorage.setItem("theme-preference", isDarkMode ? "light" : "dark");
     }
 
-    const onClickAddNote = () => {
+    function onClickAddNote() {
         document.querySelector(".add-note-menu").classList.remove("invisible");
     }
+
+
 
     return (
         <nav className="px-6 py-8 flex items-center justify-between sm:flex-row flex-col gap-y-4">
